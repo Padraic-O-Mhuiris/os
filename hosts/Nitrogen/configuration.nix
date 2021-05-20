@@ -59,6 +59,7 @@
     isNormalUser = true;
     group = "users";
     extraGroups = [ "wheel" "audio" "networkmanager" "video" "docker" ];
+    hashedPassword = "$6$86ErIakst1y$bLsBpiLKwmTwWu76ry3.wHFyPKoc957dmwbjlrQQJHkwR63t0AM69XwTPtmuBR1TzBHu798/bJpeavFKW8yAr.";
   };
 
   users.mutableUsers = false;
