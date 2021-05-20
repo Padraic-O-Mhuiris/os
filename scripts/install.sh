@@ -137,7 +137,7 @@ function build_nixos {
     NIXOS_HARDWARE="$NIXOS_CONFIG_DIR/hardware-configuration.nix"
 
     SWAP_UUID=$(by-uuid $(swap_partition))
-    SWAP_ENTRY="swapDevices = [\{ device = "/dev/disk/by-uuid/$SWAP_UUID"; \}];"
+    SWAP_ENTRY="swapDevices = [\{ device = \"/dev/disk/by-uuid/$SWAP_UUID\"; \}];"
 
     sed -i "/swapDevices/c\  $SWAP_ENTRY" $NIXOS_HARDWARE
 

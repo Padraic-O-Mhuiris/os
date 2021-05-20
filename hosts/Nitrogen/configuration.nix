@@ -25,6 +25,7 @@
 
   environment.systemPackages = with pkgs; [
     coreutils
+    iw
     binutils
     nixfmt
     wget
