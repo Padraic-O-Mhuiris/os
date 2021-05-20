@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ./fonts.nix
+    ./luks.nix
     ./boot.nix
   ];
   networking = {
@@ -14,6 +15,7 @@
       enp5s0.useDHCP = true;
       wlp4s0.useDHCP = true;
     };
+    hostId = "deadbeef";
   };
 
   i18n = { defaultLocale = "en_IE.UTF-8"; };
