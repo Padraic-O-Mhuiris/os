@@ -4,7 +4,6 @@
   imports = [
     ./hardware-configuration.nix
     ./fonts.nix
-    ./luks.nix
     ./boot.nix
   ];
   networking = {
